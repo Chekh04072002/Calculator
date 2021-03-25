@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>486</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(243, 244, 255);</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>471</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+color: rgb(0, 0, 0);
+font: 75 14pt &quot;Arial&quot;;
+}</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>376</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="3">
+     <widget class="QPushButton" name="pushButton_plus">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QPushButton" name="pushButton_ravno">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="pushButton_minus">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="pushButton_percent">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="pushButton_delenie">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="pushButton_umnozh">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="pushButton_tochka">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_del">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>DEL</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="pushButton_0">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_nazad">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;-</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="pushButton_1">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="pushButton_voskl">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: #ffca4c;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff8e2b;
+}
+
+QPushButton:pressed {
+	background-color: #ff7627;
+}</string>
+      </property>
+      <property name="text">
+       <string>!</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>91</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #bce8ff;
+}
+
+QPushButton:pressed {
+	background-color: #6f91ff;
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="3" column="0">
+     <widget class="QPushButton" name="pushButton_ln">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color:#ffa2a2;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff6f5c;
+}
+
+QPushButton:pressed {
+	background-color: #ff0800;
+}</string>
+      </property>
+      <property name="text">
+       <string>Ln</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButton_cos">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color:#ffa2a2;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff6f5c;
+}
+
+QPushButton:pressed {
+	background-color: #ff0800;
+}</string>
+      </property>
+      <property name="text">
+       <string>Cos</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton_tg">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color:#ffa2a2;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff6f5c;
+}
+
+QPushButton:pressed {
+	background-color: #ff0800;
+}</string>
+      </property>
+      <property name="text">
+       <string>Tg</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="pushButton_delx">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color:#ffa2a2;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff6f5c;
+}
+
+QPushButton:pressed {
+	background-color: #ff0800;
+}</string>
+      </property>
+      <property name="text">
+       <string>1/x</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_sin">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color:#ffa2a2;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff6f5c;
+}
+
+QPushButton:pressed {
+	background-color: #ff0800;
+}</string>
+      </property>
+      <property name="text">
+       <string>Sin</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>530</y>
+     <width>281</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="2">
+     <widget class="QPushButton" name="pushButton_14">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color: black;
+	color: white;
+	font: 87 10pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color:  black;
+}
+
+QPushButton:pressed {
+	background-color:  black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Не нажимать</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_sqrt">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color:#ffa2a2;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff6f5c;
+}
+
+QPushButton:pressed {
+	background-color: #ff0800;
+}</string>
+      </property>
+      <property name="text">
+       <string>Sqrt</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_step2">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	width: 89px;
+	height: 89px;
+	background-color:#ffa2a2;
+	color: rgb(0, 0, 0);
+	font: 87 24pt &quot;Arial&quot;;
+	border-style: outset;
+}
+
+QPushButton:hover {
+	background-color: #ff6f5c;
+}
+
+QPushButton:pressed {
+	background-color: #ff0800;
+}</string>
+      </property>
+      <property name="text">
+       <string>^2</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
